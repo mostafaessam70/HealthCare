@@ -1,0 +1,351 @@
+
+.siteColor{
+  color: #008B8B;
+}
+
+.aHeader{
+  color:grey;
+  margin-right:1%
+}
+
+#h2health{
+  font-weight:bold
+}
+
+#spanPlusIcon{
+  font-size:20px;
+}
+
+.helpHeaderSection{
+  font-size:15px;
+  margin-top:30px;
+}
+
+.par{
+color: #838383;
+ font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+line-height: 2.14;
+}
+
+#hAboutUs{
+  background-color:#008B8B;
+  text-align:center;
+  color:white;
+  padding: 15px;
+  display: inline-block;
+  margin:7%;
+  font-size:25px;
+}
+
+#h3About{
+  font-weight:bold;
+}
+
+#hFewWordsAboutUs{
+  text-align: center;
+  margin-bottom: 75px;
+  margin-top: 50px;
+}
+
+#callNowBtn{
+  background-color:#008B8B;
+  font-size: 25px;
+  margin-left:55%;
+  margin-top:7%;
+  color:white;
+  transition: transform 1s;
+}
+
+#callNowBtn:hover{
+  transform: scale(1.3);
+  opacity: 0.7;
+}
+
+.phoneHeader{
+  font-weight:bold;
+  margin-left:3%
+}
+.bgColor{
+  background-color:#008B8B;
+}
+.ulNav{
+  margin-left:13%;
+  font-size:20px;
+}
+.liNav{
+  color:white;
+}
+.searchDiv{
+  float:right;
+  margin-right:16%;
+  margin-top:1%;
+}
+#aboutUsDiv{
+  background-image:url(../img/about/eleven.jpg);
+  height:350px;
+  background-position: center;
+  background-size: cover;
+  margin-top: -20px;
+}
+#healthParagraphDiv{
+  width:100%;
+}
+.fontSize20{
+  font-size:20px;
+}
+#besideParagraphImg{
+  width:300px;
+}
+#numSection{
+  text-align:center;
+  background-color:#e8e8e8;
+  width:100%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+#numDiv{
+  width:100%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width:100%;
+}
+.numIcons{
+  font-size:50px;
+}
+.discNumParagraph{
+  color:gray;
+}
+#appoDiv{
+  background-image:url(../img/about/h.jpg);
+  height:400px;
+  width:100%;
+  border-radius: 11px;
+}
+#appoH3{
+  font-size: 35px;
+  margin-left: 3%;
+  margin-top: 15%;
+}
+#appoP{
+  margin-left: 3%;
+}
+#callNowBtn2{
+  background-color:#008B8B;
+  font-size: 25px;
+  margin-left:20%;
+  margin-top:5%;
+  color:white;
+  transition: transform 1s;
+}
+#callNowBtn2:hover{
+  transform: scale(1.3);
+  opacity: 0.7;
+}
+#hDoctorsDiv{
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.docImg{
+  width:100%;
+  height: 300px;
+  transition: transform 1s;
+}
+#doctorsImg{
+  width:100%;
+  height:250px;
+  margin-bottom: 3%;
+}
+#seeDoctorsBtn{
+  background-color:#008B8B;
+  font-size: 25px;
+  margin-left:40%;
+  margin-top:5%;
+  margin-bottom: 5%;
+  color:white;
+  transition: transform 1s;
+}
+#seeDoctorsBtn:hover{
+  transform: scale(1.3);
+  opacity: 0.7;
+}
+.doctorParagraph{
+  text-align:center;
+}
+#leftBgSpan{
+  background-image: url(../img/about/firstEdit.jpg);
+  height :400px;
+  color :white;
+  transition: transform 1s;
+  font-size: 20px;
+  line-height: 30px;
+}
+#leftBgSpan:hover{
+  transform: scale(0.9);
+}
+#centerBgSpan{
+  background-image: url(../img/about/babyEdit.jpg);
+  height :400px;
+  color :white;
+  transition: transform 1s;
+  font-size: 20px;
+ line-height: 30px;
+}
+#centerBgSpan:hover{
+  transform: scale(0.9);
+}
+#rightBgSpan{
+  background-image: url(../img/about/secondEdit.jpg);
+  height :400px;
+  color :white;
+  font-size: 20px;
+  line-height: 30px;
+  transition: transform 1s;
+}
+#rightBgSpan:hover{
+  transform: scale(0.9);
+}
+#readMoreLeftBtn{
+  background-color: white;
+  color : #008B8B;
+  margin-top: 15%;
+}
+#readMoreCenterBtn{
+  color :  white;
+  background-color: #008B8B;
+  margin-top: 15%;
+}
+#readMoreRightBtn{
+  color :  white;
+  background-color: #008B8B;
+  margin-top: 15%;
+}
+#readMoreBtn{
+  color :  white;
+  background-color: #008B8B;
+  text-align: center;
+  margin: 5%;
+  margin-left: 45%;
+  transition: transform 1s;
+}
+#readMoreBtn:hover{
+  transform: scale(1.3);
+  opacity: 0.7;
+}
+.sevicesSpan{
+  font-size: 40px;
+  margin-bottom: 9%;
+}
+.servicesParagraph{
+  color:gray;
+}
+.liServices{
+  background-color: #f3f8fd;
+}
+.liServices:hover{
+  background-color: #008B8B;
+}
+.aServices{
+  color:black;
+}
+.aServices:hover{
+  background-color: #008B8B;
+}
+.ulServices{
+  list-style :none;
+}
+.marServices{
+  margin:9%;
+}
+#h2healthHeaderServices{
+  font-weight:bold;
+}
+#plusIconHeaderSpanServices{
+  font-size:20px;
+}
+#HelpHeaderServicesSection{
+  font-size:15px;
+  margin-top:30px;
+}
+#servicesHeaderDiv{
+  background-image:url(../img/about/twelve.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: -20px;
+  height:350px;
+}
+/* doctor images hover */
+.docImg:hover{
+  border: 2px solid #008B8B;
+  transform: scale(1.2);
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+
+/* last section services page (list group open) */
+.tab {
+    width: 100%;
+    background: #f8fafc;
+    cursor: pointer;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+       transition: all 200ms ease;
+}
+.tab div {
+  display: block;
+  color: black;
+  background: #f8fafc;
+  padding: 30px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+  border: none;
+  border-left: 5px solid silver;
+}
+
+.tab div:hover {
+  background-color: #008B8B;
+  box-sizing: border-box;
+  border-left: 5px solid black;
+}
+.tab  div.active {
+  background-color: #008B8B;
+  color: white;
+   border-left: 5px solid black;
+}
+
+
+.tabContent{
+ 
+  width: 100%;
+  border-left: none;
+}
+.tab2{
+   margin-bottom: 50px;  
+}
+/* //////////// */
+.btnParagraph{
+  color:gray;
+}
+
+.rightcontent{
+     height: 500px;
+     background-color:#e5ecf1;
+}
+
+.rightcontent h3{
+    margin-bottom: 20px;
+    color: #008B8B;
+    font-weight: bold;
+}
+
+.rightcontent p{
+   font-size: 17px;
+   line-height: 25px;
+}

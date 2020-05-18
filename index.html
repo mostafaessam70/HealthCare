@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+ <title>Hello with bootstrap!</title>
+
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="css/bootstrap.css">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+ <link rel="stylesheet" href="css/home.css">
+ <link rel="stylesheet" href="css/override.bootstrap.css">
+    <!-- plygin styles-->
+ <link rel="stylesheet" href="css/animate.css">
+
+ <script src="js/bootstrap.js"></script>
+ <script src="js/jquery-1.11.3.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+
+ <script src="js/html5shiv.min.js"></script>
+ <script src="js/respond.min.js"></script>
+ <script src="js/over_ride.js"></script>
+ <script src="js/wow.js"></script>
+ <script src="js/wow.min.js"></script>
+
+</head>
+
+
+<!--head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/edit.bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head-->
+
+
+
+<body onscroll="fixnavbar()">
+
+       <!-- header-->
+    <header class="container">
+      <div class="row">
+        <section class="col-sm-6">
+          <h2 class="siteFamily" style="font-weight:bold">Health<span style="font-size:20px;" class="glyphicon glyphicon-plus siteColor"></span></h2>
+        </section>
+        <section class="col-sm-6 siteFamily" style="font-size:15px;margin-top:30px">
+          <span><a style="color:grey;margin-right:1%" href="#"> Help Desk </a></span>
+          <span style="color:grey;margin-right:1%">  |  </span>
+          <span><a style="color:grey;margin-right:1%" href="#">  Emergency Services </a></span>
+          <span style="color:grey;margin-right:1%">  |  </span>
+          <span><a style="color:grey;margin-right:1%" href="#">  Appointment </a></span>
+          <span style="font-weight:bold;margin-left:3%"><span class="glyphicon glyphicon-earphone siteColor"> </span> +3215478924</span>
+        </section>
+      </div>
+    </header>
+
+     
+       <!-- navbar-->
+<nav class="navbar" id="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="glyphicon glyphicon-align-justify" style="color: white"></span>                         
+      </button>
+      <span class="navbar-brand"><i class="glyphicon glyphicon-heart"></i> HEALTHY CARE</span>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+            <li class="btnLink active" id="default" onclick="opennav(event,'home')"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+            <li class="btnLink" onclick="opennav(event,'about')"><a href="#"><i class="fa fa-users"></i> About Us</a></li>
+            <li class="btnLink" onclick="opennav(event,'survices')"><a href="#"><i class="fa fa-servicestack"></i> Services</a></li>
+            <li class="btnLink" onclick="opennav(event,'news')"><a href="#"><i class="fa fa-edit"></i> News</a></li>
+            <li class="btnLink" onclick="opennav(event,'contact')"><a href="#"><i class="fa fa-phone"></i> Contact</a></li>
+      </ul>
+      
+    <!--form class="navbar-form navbar-right" >
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search" required>
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form-->
+        
+    </div>
+  </div>
+</nav>
+   <!--end of navbar-->
+ 
+    
+ <!-- start section of home page content-->
+<section id="home" class="btnContent wow bounceInLeft">
+ <!--start of present site--> 
+<section class="present">
+     <div class="row">
+         <div class="col-lg-5">
+           <h1>Medical Services that you can trust</h1>
+           <p>To provide access to high quality, respectful and patient-centered primary and preventive healthcare services for everyone.</p>
+         </div>     
+    </div>
+</section>
+ <!--end of present site-->   
+   
+    <!-- 3cards of view-->
+<section class="info">
+   <div class="container">
+     <div class="row">
+         <!-- card of Consultations service-->
+       <div class="Consultations col-lg-4 col-md-6 col-xs-12 ">
+            <img src="img/info/img1.png" class="img-responsive">
+           <section class="info-content">
+               <h2>Free Consultations</h2>
+               <p>We at Health Travellers Worldwide understand how difficult it is to research various treatment options, countries, cities, hospitals and the doctors on your own.</p>
+               <div id="Consultations-more" class="collapse">
+                <h3>75%</h3>
+                <p>of workflow issues could be addressed with training, support, and workflow redesign</p>               
+                <h3>9.4 out of 10</h3>
+                <p>is the rating our clients have given our consulting services</p> 
+                <h3>91%</h3>
+                <p>of client respondents would recommend our professional services</p>
+               </div>
+               
+               <button id="Consultations_btn" class="Consultations_button btn btn-primary" data-toggle="collapse" data-target="#Consultations-more" onclick="ReadMoreConsultations()">Read More</button>
+            </section>     
+       </div> 
+               <!-- card of Emergency-care service-->
+        <div class="Emergency-Care col-lg-4 col-md-6 col-xs-12">
+             <img src="img/info/img2.png" class="img-responsive"> 
+            <section class="info-content">  
+               <h2>Emergency Care</h2>
+                <p>WHO's Emergency, Trauma and Acute Care programme is dedicated to strengthening the emergency care systems that serve as the first point of contact with the Hostiptal.</p>
+             <div id="Emergency-more" class="collapse">
+                <p>All around the world, acutely ill and injured people seek care every day.  Frontline providers manage children and adults with medical, surgical and obstetric emergencies, including injuries and infections, heart attacks and strokes, asthma and acute complications of pregnancy.
+                WHO's Emergency, Trauma and Acute Care programme is dedicated to strengthening the emergency care systems that serve as the first point of contact with the health system for so much of the world, and to supporting the development of quality, timely emergency care accessible to all.</p>
+            </div>
+                <button id="Emergency_btn" class="Emergency_button btn btn-primary" data-target="#Emergency-more" data-toggle="collapse" onclick="ReadMoreEmergency()">Read More</button>
+             </section>    
+         </div>  
+                <!-- card of form-care service-->
+      <div class="form-box-info col-lg-4 col-md-6 col-xs-12">
+        <section class="form_content"> 
+           <h2 class="form_header">Make an Appointment</h2>
+           <form name="form" method="post">
+            <select class="form-input form-control" required>
+               <option>Cardiology</option>   
+               <option>Gastroenterology</option>   
+               <option>Medical Lab</option>   
+               <option>Dental Care</option>   
+               <option>Surgery</option>   
+               <option>Neurology</option>   
+            </select>
+
+            <select class="form-input form-control" required>
+               <option>Doctor 1</option>   
+               <option>Doctor 2</option>   
+               <option>Doctor 3</option>   
+               <option>Doctor 4</option>   
+               <option>Doctor 5</option>   
+               <option>Doctor 6</option>   
+            </select>
+               
+            <input type="text" name="name" class="form-input form-control" placeholder="Name" required>
+            <input type="text" name="phone" class="form-input form-control" placeholder="Phone No" required>
+            <input name="date_" type="date" class="form-input form-control"  required  onchange="minDate()">
+            <button class="btn btn-primary info_form_button btn-block" onclick="validation()">Make An Appointment</button>
+           </form>
+         </section> 
+      </div>  
+     </div> 
+   </div>  
+</section>
+    <!--end  3cards of view-->
+
+    
+<!--start of service-->
+<section class="services">
+  <div class="container">
+       <div class="title text-center">
+         <h1 class="section_title">Our Services</h1>
+         <p class="section_subtitle">TO CHOOSE FROM</p>
+       </div>
+
+      
+<div class="row icon_boxes_row">
+    <div class="col-lg-4 col-sm-12">
+       <div class="icon_box">
+          <div>
+            <img src="img/iconserv/2.png" width="70px" height="70px" alt="">
+            <span class="icon_box_title">Cardiology</span>
+          </div>
+          <p class="icon_box_text">The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease and electrophysiology.</p>
+       </div>
+     </div>
+
+    <div class="col-lg-4 col-sm-12">
+       <div class="icon_box">
+          <div>
+              <img src="img/iconserv/1.png" width="70px" height="70px" alt="">
+              <span class="icon_box_title">Gastroenterology</span>
+          </div>
+           <p class="icon_box_text"> which include the organs from mouth into anus, along the alimentary canal, are the focus of this speciality.</p>
+       </div>
+   </div>
+
+    <div class="col-lg-4 col-sm-12">
+       <div class="icon_box">
+          <div>
+             <img src="img/iconserv/3.png" width="70px" height="70px" alt="">
+             <span class="icon_box_title">Medical Lab</span>
+          </div>
+          <p class="icon_box_text">Medical laboratories vary in size and complexity and so offer a variety of testing services. More comprehensive services can be found in acute-care hospitals and medical centers.</p>
+        </div>
+     </div>
+ </div>
+    
+<div class="row icon_boxes_row">      
+    <div class="col-lg-4 col-sm-12">
+       <div class="icon_box">
+         <div>
+           <img src="img/iconserv/4.png" width="70px" height="70px" alt="">
+           <span class="icon_box_title">Dental Care</span>
+         </div>
+        <p class="icon_box_text"> the professional care of teeth, including professional oral hygiene and dental surgery.</p>
+       </div>
+    </div>
+
+    <div class="col-lg-4 col-sm-12">
+       <div class="icon_box">
+          <div>
+             <img src="img/iconserv/5.png" width="70px" height="70px"  alt="">
+             <span class="icon_box_title">Surgery</span>
+          </div>
+          <p class="icon_box_text">medical specialty that uses operative manual and instrumental techniques on a person to investigate or treat a pathological condition such as a disease or injury.</p>
+      </div>
+   </div>
+
+   <div class="col-lg-4 col-sm-12">
+      <div class="icon_box">
+        <div class="icon_box_title_container align-items-center justify-content-start">
+           <img src="img/iconserv/6.png" width="70px" height="70px" alt="">
+           <span class="icon_box_title">Neurology</span>
+        </div>
+        <p class="icon_box_text">Neurology deals with the diagnosis and treatment of all categories of conditions and disease involving the central and peripheral nervous systems.</p>
+     </div>
+  </div>
+</div>
+     
+    <!--div class="text-center"><button class="serv-more-btn btn btn-primary ">READ MORE</button></div-->
+      
+  </div>
+</section>
+<!--end of 3cards of service-->
+
+    
+  <!--start section of Our Departments-->  
+<section class="our-department">
+   <div class="title text-center">
+      <h1>Our Departments</h1>
+       <p>TO CHOOSE FROM</p>
+   </div>
+    
+
+    <section>
+    <div class="row">
+      <div class="container">
+        <div class="dept col-lg-3 col-md-6 col-sm-12 wow bounceInLeft">
+            <img src="img/departments/1.jpg" class="img-responsive">
+           <section class="info-content">
+               <h3>Recovery Room</h3>
+               <p>The recovery room is a place for the patient to safely regain consciousness after surgery and to receive appropriate post operative care. This is where the nursing staff work to ease the anxiety and ensure the physical and emotional comfort of the patients.</p>
+            </section>     
+         </div>
+          
+         <div class="dept col-lg-3 col-md-6 col-sm-12 wow bounceInLeft">
+            <img src="img/departments/2.jpg" class="img-responsive">
+           <section class="info-content">
+               <h3>Flexible Endoscope Reprocessing</h3>
+               <p>Modern infection control is based on the barrier principle, a clear separation of dirty and clean areas. Getinge offers an efficient, error-proof, safe, traceable process to ensure that only scopes that have run through a complete and approved cycle can be unloaded from the clean side.</p>
+            </section>     
+         </div>
+          
+         <div class="dept col-lg-3 col-md-6 col-sm-12 wow bounceInRight">
+            <img src="img/departments/3.jpg" class="img-responsive">
+           <section class="info-content">
+               <h3>Hybrid OR</h3>
+               <p>The Hybrid OR is the future of medicine. It’s also the most technically complex surgical suite ever designed. From integrated imaging technologies to versatile multidisciplinary equipment, let Getinge help you build a Hybrid OR that sets the foundation for your hospital’s future</p>
+            </section>     
+         </div>
+          
+         <div class="dept col-lg-3 col-md-6 col-sm-12 wow bounceInRight">
+            <img src="img/departments/4.jpg" class="img-responsive bounceInRight">
+           <section class="info-content">
+               <h3>ICU</h3>
+               <p>Achieve tangible outcomes in the ICU with the help of user-friendly and reliable solutions. We help you create an effective healing environment that enables acute care therapies and promotes early mobility.</p>
+            </section>     
+         </div>
+     </div>
+   </div> 
+        
+    <div class="row">
+      <div class="container">      
+         <div class="dept col-lg-3 col-md-6 col-sm-12 wow bounceInLeft">
+            <img src="img/departments/5.jpg" class="img-responsive">
+           <section class="info-content">
+               <h3>Sterile Supply Reprocessing</h3>
+               <p>Getinge is the expert of creating a seamless workflow of instrument reprocessing. We can help you develop the most efficient and cost-effective workflow to streamline the process from the moment the instruments have been used, to the moment when they are safe and ready to be used again.</p>
+            </section>     
+         </div>
+          
+          
+         <div class="dept col-lg-3 col-md-6 col-sm-12 wow bounceInLeft">
+            <img src="img/departments/6.jpg" class="img-responsive">
+           <section class="info-content">
+               <h3>OR</h3>
+               <p>The modern OR is the core of the hospital, the intersection of many professional disciplines, each with unique needs.  Multifunctional, cross-disciplinary surgical suites can improve efficiency, enhance patient care and keep costs under control.</p>
+            </section>     
+         </div>
+          
+          
+         <div class="dept col-lg-3 col-md-6 col-sm-12 wow bounceInRight">
+            <img src="img/departments/7.jpg" class="img-responsive">
+           <section class="info-content">
+               <h3>Sterile Supply Reprocessing</h3>
+               <p>Getinge is the expert of creating a seamless workflow of instrument reprocessing. We can help you develop the most efficient and cost-effective workflow to streamline the process from the moment the instruments have been used, to the moment when they are safe and ready to be used again.</p>
+            </section>     
+         </div>
+          
+          
+         <div class="dept col-lg-3 col-md-6 col-sm-12 wow bounceInRight">
+            <img src="img/departments/8.jpg" class="img-responsive">
+           <section class="info-content">
+               <h3>Cath Lab</h3>
+               <p>The cath lab has evolved into a suite where a wide variety of interventional procedures are performed. Life-saving treatment strategies, ranging from balloon expandable covered stents to intra-aortic balloon pumps, can be used for your minimally invasive procedures in the modern cath lab.</p>
+            </section>     
+         </div>
+     </div> 
+        
+       </div>
+    </section>
+      
+</section>
+<!--end section of Our Departments--> 
+    
+
+<!--start section of Our stuff and news--> 
+<section class="stuff">
+ <div class="row">
+   <div class="container">    
+    <section class="stuff col-lg-7 col-sm-12">
+      <h1><i class="fa fa-users"></i> Stuff</h1>
+      <p>READ ALL ABOUT IT</p>  
+    <div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading"> 
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse1" onclick="changicon1()">
+        <i id="icon1" class="glyphicon glyphicon-plus col-lg-1 text-center"></i> Doctors</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body">The doctors are the primary care providers. A doctor studies for many years and gains experience for a few more years before he or she can actually practice as a doctor. There are different types of doctors. The doctors that we all refer to as ‘doctor’ is also called a physician or general practitioner. We go to them for first-level diagnoses and the treatment of colds, flu, and other conditions.</div>
+    </div>
+  </div>
+        
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse2">
+       <i id="icon2" class="glyphicon glyphicon-plus col-lg-1 text-center" onclick="changicon2()"></i> Nurses</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">Nurses are not only in hospitals. There may be trained and registered nurses in a doctor’s office to take blood pressure, do blood sugar tests, draw blood, etc. Nurses work closely with patients and their job in the healthcare process is often more important for recovery than the doctor’s. They take care of patients and are there when things go wrong. Nurses can have different levels of qualification based on their studies and experience..</div>
+    </div>
+  </div>
+        
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse3">
+        <i id="icon3" class="glyphicon glyphicon-plus col-lg-1 text-center" onclick="changicon3()"></i> Pharmacists</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">Pharmacists have to study for a long time and know a lot about chemicals, medicines, side effects, and toxins. They are the people who give patients medications that a doctor prescribed for a specific condition. They can also advise patient’s on over-the-counter medication to help with certain conditions.</div>
+    </div>
+  </div>
+        
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse4">
+        <i id="icon4" class="glyphicon glyphicon-plus col-lg-1 text-center" onclick="changicon4()"></i> Administrative Staff</a>
+      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body">Administrative staff at a doctor’s office or a hospital is also an important part of the healthcare team. Without them, things may go very wrong. They handle appointments, payments, patient files, health insurance companies, specialists, medical reps, etc.</div>
+    </div>
+  </div>
+        
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse5">
+        <i id="icon5" class="glyphicon glyphicon-plus col-lg-1 text-center" onclick="changicon5()"></i> Technologists and Technicians</a>
+      </h4>
+    </div>
+    <div id="collapse5" class="panel-collapse collapse">
+      <div class="panel-body">Before making a diagnosis, doctors often need more information about what is going on in the patient’s body. To get this information, the doctor may send blood or urine samples to a lab for analysis. The technicians who work in the lab look for all kinds of things in the blood or urine to help the doctor make a diagnosis.</div>
+    </div>
+  </div>
+</div>    
+    </section>
+     
+    <section class="news col-lg-5 col-sm-12">
+      <h1><i class="fa fa-edit"></i> Latest News</h1>
+      <p>READ  ALL  ABOUT  IT</p>
+        
+ <section class="articles">
+    <div class="media">
+      <div class="media-left">
+         <img src="img/article/latest_1.webp" class="media-object" style="width:80px">
+      </div>
+      <div class="media-body">
+         <h4 class="media-heading"><a href="#">A simple blog post</a></h4>
+         <p>by Jane Smith / April 25, 2018</p>
+          <a href="#" class="comment">16 Comments</a>
+      </div>
+    </div>
+        
+    <div class="media">
+       <div class="media-left">
+          <img src="img/article/latest_2.webp" class="media-object" style="width:80px">
+       </div>
+       <div class="media-body">
+           <h4 class="media-heading"><a href="#">A new way to see things in medicine</a></h4>
+           <p>by Jane Smith / April 25, 2018</p>
+           <a href="#" class="comment">7 Comments</a>
+       </div>
+    </div>
+        
+    <div class="media">
+       <div class="media-left">
+          <img src="img/article/latest_3.webp" class="media-object" style="width:80px">
+       </div>
+       <div class="media-body">
+          <h4 class="media-heading"><a href="#">Why is Pharma industry so big?</a></h4>
+          <p>by Jane Smith / April 25, 2018</p>
+          <a href="#" class="comment">12 Comments</a>
+       </div>
+     </div>
+  </section>
+        
+
+      </section>
+    </div>        
+  </div>   
+</section>    
+</section>    
+<!--end section of Our stuff and news--> 
+    
+    
+  <!--start section about us-->   
+  <section class="btnContent wow bounceInLeft" id="about" style="display:none;">
+
+
+    <div class="container-fluid">
+      <section class="row">
+        <div class="col-sm-12 siteFamily" id="aboutUsDiv">
+          <h1 id="hAboutUs">About Us</h1>
+        </div>
+      </section>
+    </div>
+
+    <section class="container-fluid">
+      <div id="hFewWordsAboutUs" class="row siteFamily">
+        <h1>A Few Words About Us</h1>
+        <p>TO CHOOSE FROM</p>
+      </div>
+    </section>
+
+    <article class="container">
+      <section>
+        <div class="row siteFamily" id="healthParagraphDiv">
+          <span class="col-sm-4">
+            <h3 class="siteFamily" id="h3About">Health<span class="glyphicon glyphicon-plus siteColor fontSize20"></span></h3>
+            <p class="fontSize20">We will provide efficient caring services to our patients and others in a courteous and professional way. We will strive to provide high quality, cost-efficient health care. We will continue to develop new services and eliminate obstacles to demonstrate our commitment of being responsive to the needs of our community.</p>
+            <p>Our Community Deserves The Best We Can Offer.</p>
+          </span>
+            
+          <span class="col-sm-4 fontSize20">
+            <p class="par">As an organization, we value the participation of each employee, physician, volunteer, and Board member. We will encourage suggestions, listen attentively, and follow through. Recognizing the importance of everyone who works here, we expect to treat one another, and to be treated, with respect and a sense of importance of team work. Our greatest asset is the people who are committed to our organization.</p>
+          </span>
+            
+          <span class="col-sm-4">
+            <img id="besideParagraphImg" class="img-rounded" src="img/about/hapy.jpg" alt="" title=""><hr><br>
+            <p>Phas ellus ut erat dapibus, tempor sapien non, porta. Aenean sit amet leo id enim dapibus eleifend.</p>
+          </span>
+            
+        </div>
+      </section>
+    </article>
+
+    <section class="container row">
+      <div class="col-sm-12 wow rubberBand"  data-wow-iteration="10">
+        <button id="callNowBtn" class=" btn siteFamily "  type="button" name="button" onclick="opennav(event,'contact')">Book</button>
+      </div>
+    </section>
+
+    <section class="container siteFamily" id="numSection">
+      <div class="row" id="numDiv">
+        <span class="col-sm-3">
+          <span class=" glyphicon glyphicon-calendar siteColor numIcons">365</span>
+          <p class="discNumParagraph">Days a year</p>
+        </span>
+        <span class="col-sm-3">
+          <span class=" glyphicon glyphicon-user siteColor numIcons">25K</span>
+          <p class="discNumParagraph">Patient a year</p>
+        </span>
+        <span class="col-sm-3">
+          <span class=" glyphicon glyphicon-star siteColor numIcons">125</span>
+          <p class="discNumParagraph">Amazing Doctors</p>
+        </span>
+        <span class="col-sm-3">
+          <span class="glyphicon glyphicon-hourglass siteColor numIcons">12K</span>
+          <p class="discNumParagraph">Lab Results</p>
+        </span>
+      </div>
+    </section>
+
+    <article class="container">
+      <div class="row siteFamily" id="appoDiv">
+        <h3 id="appoH3">Make an appointment with one of our professional Doctors.</h3>
+        <p id="appoP">Morbi arcu neque, scelerisque eget ligula ac, congue tempor felis. Integer tempor, eros a egestas.</p>
+        <button id="callNowBtn2" class=" btn siteFamily" type="button" name="button" onclick="opennav(event,'contact')">Make An Appointment</button>
+      </div>
+    </article>
+
+    <article class="container">
+      <div id="hDoctorsDiv" class="row siteFamily">
+        <h2>Our Doctors</h2>
+        <p>TO CHOOSE FROM</p>
+      </div>
+    </article>
+
+    <article class="container">
+      <div class="row">
+        <span class="col-lg-3 col-sm-6 wow bounceInLeft" data-wow-delay=".5s"> <img class="docImg img-circle" src="img/about/a.jpg" >
+           <h2 class="doctorParagraph siteColor siteFamily">Martha James</h2>
+           <p class="doctorParagraph siteColor siteFamily">Surgeon</p>
+        </span>
+        <span class="col-lg-3 col-sm-6 wow bounceInUp" data-wow-delay=".5s"> <img class="docImg img-circle" src="img/about/c.jpg" >
+          <h2 class="doctorParagraph siteColor siteFamily">Adam Parker</h2>
+          <p class="doctorParagraph siteColor siteFamily">Surgeon</p>
+        </span>
+        <span class="col-lg-3 col-sm-6 wow bounceInRight" data-wow-delay=".5s"> <img class="docImg img-circle" src="img/about/b.jpg">
+          <h2 class="doctorParagraph siteColor siteFamily">Kate Rodulf</h2>
+          <p class="doctorParagraph siteColor siteFamily">Laboratory</p>
+        </span>
+        <span class="col-lg-3 col-sm-6 wow bounceInDowen" data-wow-delay=".5s"> <img class="docImg img-circle" src="img/about/d.jpg">
+          <h2 class="doctorParagraph siteColor siteFamily">Joe Smith</h2>
+          <p class="doctorParagraph siteColor siteFamily">Surgeon</p>
+        </span>
+      </div>
+    </article><br>
+
+    <article class="container">
+      <div class="row">
+        <span class="col-lg-3 col-sm-6 wow bounceInUp" data-wow-delay=".5s"> <img class="docImg img-circle" src="img/about/e.jpg" alt="" title="">
+          <h2 class="doctorParagraph siteColor siteFamily">Elena Russendel</h2>
+          <p class="doctorParagraph siteColor siteFamily">Surgeon</p>
+        </span>
+        <span class="col-lg-3 col-sm-6 wow bounceInUp" data-wow-delay=".5s"> <img class="docImg img-circle" src="img/about/g.jpg" alt="" title="">
+          <h2 class="doctorParagraph siteColor siteFamily">Divid Kam</h2>
+          <p class="doctorParagraph siteColor siteFamily">Surgeon</p>
+        </span>
+        <span class="col-lg-3 col-sm-6 wow bounceInDowen" data-wow-delay=".5s"> <img class="docImg img-circle" src="img/about/i.jpg" alt="" title="">
+          <h2 class="doctorParagraph siteColor siteFamily">Sara Jermy</h2>
+          <p class="doctorParagraph siteColor siteFamily">Surgeon</p>
+        </span>
+        <span class="col-lg-3 col-sm-6 wow bounceInDowe" data-wow-delay=".5s"> <img class="docImg img-circle" src="img/about/k.jpg" alt="" title="">
+          <h2 class="doctorParagraph siteColor siteFamily">Jane Bakom</h2>
+          <p class="doctorParagraph siteColor siteFamily">Pediatrist</p>
+        </span>
+      </div>
+    </article>
+
+    <article class="container">
+      <div class="row">
+        <button id="seeDoctorsBtn" class=" btn btn-info  siteFamily" data-toggle="collapse" data-target="#doctorsImg" type="button">See All Doctors</button>
+        <img id="doctorsImg" class="collapse" src="img/about/doctorsall.jpg" alt="" >
+        
+      </div>
+    </article>
+ </section>
+  <!--end section about us--> 
+    
+
+    <!--start section survices-->  
+  <section class="btnContent wow bounceInLeft" id="survices" style="display:none;">
+
+    <div class="container-fluid">
+      <section class="row">
+        <div class="col-sm-12 siteFamily" id="servicesHeaderDiv">
+          <h1 id="hAboutUs">Services</h1>
+        </div>
+      </section>
+    </div>
+
+    <section class="container-fluid">
+      <div id="hFewWordsAboutUs" class="row siteFamily">
+        <h2>Our Services</h2>
+        <p>TO CHOOSE FROM</p>
+      </div>
+    </section>
+
+    <article class="container">
+      <div class="row siteFamily">
+        <section class="col-sm-4">
+          <span class="glyphicon glyphicon-heart-empty sevicesSpan siteColor"> Cardiology</span><br><br>
+          <p class="servicesParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</p>
+        </section>
+        <section class="col-sm-4">
+          <span class="glyphicon glyphicon-apple sevicesSpan siteColor"> Nsutrition</span><br><br>
+          <p class="servicesParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</p>
+        </section>
+        <section class="col-sm-4">
+          <span class=" glyphicon glyphicon-tint sevicesSpan siteColor"> Medical Lab</span><br><br>
+          <p class="servicesParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</p>
+        </section>
+      </div>
+    </article><br><br><br>
+
+    <article class="container">
+      <div class="row siteFamily" style="margin-bottom: 50px">
+        <section class="col-sm-4">
+          <span class="glyphicon glyphicon-eye-open sevicesSpan siteColor"> Ophthalmology</span><br><br>
+          <p class="servicesParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</p>
+        </section>
+        <section class="col-sm-4">
+          <span class="glyphicon glyphicon-scissors sevicesSpan siteColor"> Surgery</span><br><br>
+          <p class="servicesParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</p>
+        </section>
+        <section class="col-sm-4">
+          <span class=" glyphicon glyphicon-baby-formula sevicesSpan siteColor" > Pediatrics</span><br><br>
+          <p class="servicesParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</p>
+        </section>
+      </div>
+    </article>
+
+    <section class="container">
+      <div class="row">
+        <!--button id="readMoreBtn" class=" btn siteFamily btn-lg aniBtn" type="button" name="button">
+          <span class="hoverBtnSpan">Read More</span>
+        </button-->
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row siteFamily">
+        <span id="leftBgSpan" class="col-sm-4 wow bounceInLeft">
+           <h1>Our Vision</h1> <p>Take A Look</p><br>
+           <p class="readParagraph">Our vision is to be recognized for the quality of service we provide and our attention to patient care. We want to remain an independent, not-for-profit, full-service community hospital and to continue to be the major health care provider in our primary area  as well as the hospital of choice for our medical staff. </p>     
+        </span>
+          
+        <span id="centerBgSpan" class="col-sm-4 wow bounceInUp">
+          <h1>Our Center</h1> <p>Take A Look</p><br>
+          <p class="readParagraph">Our services will make a difference in the quality of life in the communities we serve. It is our responsibility to assess the needs of our patients, physicians, employees, and others, and, to the best of our ability and resources, respond to those needs.</p>
+        </span>
+        <span id="rightBgSpan" class="col-sm-4 wow bounceInRight">
+          <h1>Our Mission</h1> <p>Take A Look</p><br>
+          <p class="readParagraph">Our mission is to promote an environment where members of our community can receive high quality care and service so they can maintain and be restored to good health. We will accomplish our mission by interacting with the following groups . . .</p>
+          <p>- Our Physicians       - Our Employees</p>
+          <p>- Our Associates       - Our Community</p>  
+       </span>
+      </div>
+    </section><br><br><br>
+
+   
+    <section class="container">
+      <div class="row siteFamily">
+          
+<section class="col-lg-5 tab2">         
+  <div class="tab">
+     <div class="tablinks active" onclick="opentap(event, 'create')" id="defaultOpen">
+         <h2>Create</h2>
+     </div>
+    
+     <div class="tablinks" onclick="opentap(event, 'project')">
+       <h2>Project</h2>
+     </div>
+      
+    <div class="tablinks" onclick="opentap(event, 'discuss')">
+       <h2>Discuss</h2>
+    </div>
+      
+    <div class="tablinks" onclick="opentap(event, 'brainstorm')">
+       <h2>Brainstorm</h2>
+   </div>
+      
+  </div>      
+</section>
+
+          
+          
+          
+
+ <section class="col-lg-7 ">   
+<div id="project" class="tabcontent" style="display: none;">
+    <div class="row">
+      <div class="col-lg-6">
+       <img class="img-responsive" src="img/about/doc1.jpg"> 
+      </div> 
+        
+        <div class="rightcontent col-lg-6">
+         <h3>Psychology</h3>
+         <p>As you can see, while psychology may be a relatively young science it also has a tremendous amount of both depth and breadth. The assessment, diagnosis, and treatment of mental illness are central interests of psychology, but psychology encompasses much more than mental health.
+         Today, psychologists seek to understand many different aspects of the human mind and behavior, adding new knowledge to our understanding of how people think as well as developing practical applications that have an important impact on everyday human lives.</p>
+        </div>
+    </div>
+</div>
+
+<div id="create" class="tabcontent">
+    <div class="row">
+      <div class="col-lg-6">
+       <img class="img-responsive" src="img/about/doc6.jpg">  
+      </div> 
+               
+       <div class="rightcontent col-lg-6">
+         <h3>Our Under construction</h3>
+         <p>development is the master need in our strategy</p>
+         <h3>Neurology</h3>
+         <p>The maximum accuracy is dealt with due to its severe and continuous treatment effect.</p>
+         <h3>Dental Care</h3>
+         <p>The latest devices and technologies are used to keep pace with the rapid development.</p>
+       </div>
+    </div>
+</div>
+
+<div id="discuss" class="tabcontent"style="display: none;">
+    <div class="row">
+      <div class="col-lg-6">
+       <img class="img-responsive" src="img/about/doc5.jpg">  
+      </div> 
+        
+        
+        <div class="rightcontent col-lg-6">
+         <h3>Diagnosis</h3>
+         <p>It is most in need of discussion and continuous development, as he is primarily responsible for choosing the right treatment and its success .</p>
+         <p>The diagnosis gets our greatest attention and our full support due to its importance and its vital active role in the rest of our departments .</p>
+         <h3>Medical Lab</h3>
+         <p>Looking forward to reach the most accurate results of the various tests carried out in all our specialties, which helps in the proper diagnosis .</p>
+        </div>
+
+    </div>
+</div>
+
+<div id="brainstorm" class="tabcontent" style="display: none;">
+    <div class="row">
+      <div class="col-lg-6">
+       <img class="img-responsive" src="img/about/doc2.jpg">  
+      </div> 
+        
+
+        <div class="rightcontent col-lg-6">
+          <h3>Leads Us</h3>
+          <p>A better solution to a community issue or proposal because a wider range of options has been canvassed.</p>
+          <p>Which is very helpful for our mission</p>
+          <h3>How Come !</h3>
+          <p>Provide the equipment required to operate in this desired manner.</p>
+          <p>We accept constructive opinions from you at any time and take them into consideration.</p>
+        </div>
+    </div>
+</div>
+ </section>
+          
+         </div>
+      </section>
+      
+    </section>
+   <!--end section survices-->
+
+    
+    <!-- start section of news-->
+  <section class="btnContent wow bounceInLeft" id="news" style="display:none;">
+     <header>
+         <h1>NEWS</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <img src="img/news/3.jpg" id="news_1img">
+                <button type="button" class="btn btn-date" id="btn_date">2/6/2020</button>
+                <!--10 tips-->
+                <div>
+                    <h2>10 Tips on how to live a healthy life</h2>
+                    <ul class="writer_date">
+                        <li>by Jane Smith</li>
+                        <li>April 25, 2018</li>
+                    </ul>
+                    <ol>
+                        <li>Eat a variety of foods</li>
+                        <li>Base your diet on plenty of foods rich in carbohydrates</li>
+                        <li>Reduce salt and sugar intake</li>
+                        <li>Get on the move, make it a habit!</li>
+                    </ol>
+
+                         
+                            <div class="collapse" id="collapseExample1">
+                                <div class="card card-body">
+                                <p style="margin-left:27px; margin-top: -8px;">
+                                  5.  Eat regularly, control the portion size<br>
+                                  6.  Get on the move, make it a habit!<br>
+                                  7.  Enjoy plenty of fruits and vegetables<br>
+                                  8.  Drink plenty of fluids<br>
+                                  9.  Maintain a healthy body weight
+                                  10. Start now! And keep changing gradually.<br>
+                                </p>
+                                </div>
+                              </div>
+                            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample" 
+                                          id="btn_readmore_tips">
+                                        Read More                            </a>
+                     <!---------New lab tests that could save your life----->
+                     <img src="img/news/2.jpg" id="news_1img">
+                     <button type="button" class="btn btn-date" id="btn_date">2/6/2020</button>
+                     <h2>New lab tests that could save your life</h2>
+                     <ul class="writer_date">
+                         <li>by Jane Smith</li>
+                         <li>April 25, 2018</li>
+                     </ul>
+                     <p>
+                        Heart disease is the leading cause of death for men and women in the United States. This year, 
+                        more than 1.2 million people will have a heart attack. 
+                        While there are warning signs and risk factors, heart disease can hit anyone.
+                        </p>
+                    
+                   
+                    
+                        <div class="collapse" id="collapseExampleb2">
+                            <div class="card card-body">
+                                Heart attacks and other types of heart disease occur when coronary arteries become
+                                clogged with fatty deposits, resulting in coronary artery disease (CAD). Until recently
+                                there was no way, outside of traditional imaging tests, to measure artery health, but a
+                                new test is changing all that. Imaging scans are invasive and expose people to
+                                radiation, limiting their use.
+
+                                Corus CAD by Cardio Dx is a gene expression test that uses messenger RNA from a gene set
+                                in blood cells to determine whether or not patients have coronary artery blockages.
+                                Patients are given a simple blood test that delivers a score on a scale of one to 40.
+                                “If they score between one and 15 trial evidence shows that the likelihood of that
+                                person having blockage is low,” says Deborah L. Kilpatrick, Ph.D., chief commercial
+                                officer of Cardio Dx. The higher your score, the more likely you are to have blockages.
+                                This knowledge enables your physician to take extra precautions and book follow-up tests
+                                that can potentially save your life.
+
+                            </div>
+                        </div>
+                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExampleb2" role="button"
+                            aria-expanded="false" id="btn_readmore_test">
+                            Read More </a>
+                    
+                    
+                        
+                      <img src="img/news/news_3.jpg" id="news_1img">
+                    <button type="button" class="btn btn-date" id="btn_date">2/6/2020</button>
+                    <h2>Resting heart rate: No such thing as 'normal'</h2>
+                    <ul class="writer_date">
+                        <li>by Jane Smith</li>
+                        <li>April 25, 2018</li>
+                    </ul>
+                      <p>
+                        A recent study concludes that when it comes to resting heart rate (RHR), “normal” does not
+                        exist.
+                        Although most people’s RHR is relatively stable over time, from person to person,
+                        rates vary by as much as 70 beats per minute (bpm)
+                        </p>
+                    
+                    
+                        <div class="collapse" id="collapseExample3">
+                            <div class="card card-body">
+                                Although doctors routinely measure people’s RHR, it is still not clear what constitutes
+                                “normal,” and what variations from this norm mean for health.
+
+                                Over the years, large studies have come to a consensus on what doctors should now
+                                consider the normal range.
+
+                                For instance, the National Health and Nutrition Examination Survey, which analyzed data
+                                from almost 50,000 people, found that the average RHR for adults is 72 bpm.
+
+                                The American Heart Association (AHA) consider an RHR of 60–100 bpm normal for adults.
+
+                                However, RHRs that fall well within the normal range can still increase a person’s
+                                mortality risk.
+
+                                In general, higher rates are associated with increased cardiovascular risk, but one
+                                study found that people with an RHR below 65 bpm are also at risk. In the same study,
+                                the authors showed that a significant change in RHR over the 3 year follow-up period
+                                also increased cardiovascular risk.
+
+                                In short, results are mixed. As the authors of the new study explain, “a single
+                                measurement of heart rate provides very little useful information about the current
+                                health of an individual, unless well out of the expected range of normal.”
+
+                                Rather than taking RHR measurements at discrete points in time, the researchers behind
+                                the new study took a “long view of individual changes in cardiac performance.”
+
+                                They have now published their findings in the journal PLOS ONE.
+
+                            </div>
+                        </div>
+                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" id="btn_readmore_test">
+                            Read More </a>
+                          
+                          <img src="img/news/news_4.jpg" id="news_1img">
+                    <button type="button" class="btn btn-date" id="btn_date">2/6/2020</button>
+                    <h2>Novel coronavirus: Your questions, answered</h2>
+                    <ul class="writer_date">
+                        <li>by Jane Smith</li>
+                        <li>April 25, 2018</li>
+                    </ul>
+                    <p>
+                        The current outbreak of infections with a novel type of coronavirus has sparked global anxiety
+                        and concern that the virus might spread too far and too fast and cause dramatic harm before
+                        health officials find a way to stop it.
+                        But what are the realities of the new coronavirus outbreak? We investigate.
+                        <p>
+                           
+                        </p>
+                        <div class="collapse" id="collapseExample4">
+                            <div class="card card-body">
+                                In December last year, reports started to emerge that a coronavirus that specialists had
+                                never before seen in humans had begun to spread among the population of Wuhan, a large
+                                city in the Chinese province of Hubei.
+
+                                Since then, the virus has spread to other countries, both in and outside Asia, leading
+                                authorities to describe this as an outbreak. At the end of last month, the World Health
+                                Organization (WHO) declared the situation to be a public health emergency.
+
+                                To date, the novel coronavirus — currently dubbed 2019-nCoV for short — has been
+                                responsible for 31,211 infections in China and 270 across 24 other world countries. In
+                                China, the virus has so far caused 637 deaths. It also led to one fatality in the
+                                Philippines.
+
+                                But what do we really know about this virus? And how is it likely to affect the global
+                                population?
+
+                                Medical News Today have contacted the WHO, used the information that public health
+                                organizations have offered, and looked at the newest studies that have featured in
+                                peer-reviewed journals to answer these and other questions from our readers.
+
+                                1. What is the new virus?
+                                2019-nCoV is a coronavirus. Coronaviruses are a family of viruses that target and affect
+                                mammals’ respiratory systems. According to their specific characteristics, there are
+                                four main “ranks” (genera) of coronaviruses, which are called alpha, beta, delta, and
+                                gamma.
+
+                                Most of these only affect animals, but a few can also pass to humans. Those that are
+                                transmissible to humans belong to only two of these genera: alpha and beta.
+
+                                Only two coronaviruses have previously caused global outbreaks. The first of these was
+                                the SARS coronavirus — responsible for severe acute respiratory syndrome (SARS) — which
+                                first started spreading back in 2002, also in China. The SARS virus epidemic primarily
+                                affected the populations of mainland China and Hong Kong, and it died off in 2003.
+
+                            </div>
+                        </div>
+                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample4" id="btn_readmore_test">
+                        Read More </a>
+                    
+                    
+                     <img src="img/news/news_5%20(2).jpg" id="news_1img">
+                    <button type="button" class="btn btn-date" id="btn_date">2/6/2020</button>
+                    <h2>Diabetes drug may compromise cardiovascular health</h2>
+                    <ul class="writer_date">
+                        <li>by Jane Smith</li>
+                        <li>April 25, 2018</li>
+                    </ul>
+                    <p>
+                        New research uses high quality data to find that the type 2 diabetes drug rosiglitazone raises
+                        the risk of adverse cardiovascular events by 33%.
+                        <p>
+                           
+                        </p>
+                        <div class="collapse" id="collapseExample5">
+                            <div class="card card-body">
+                                Rosiglitazone is a drug originally developed to treat type 2 diabetes. The United States
+                                Food and Drug Administration (FDA) approved it in 1999 under the name Avandia.
+
+                                Although Europe suspended the drug due to concerns about its adverse effects on heart
+                                health, and the United States restricted its use, the research on its safety has so far
+                                yielded mixed results.
+
+                                Now, a new study, appearing in the journal The BMJ has used more reliable data to
+                                investigate the effects of this drug on cardiovascular health.
+
+                                Joshua D. Wallach, who is an assistant professor in the Department of Environmental
+                                Health Sciences at Yale School of Public Health in New Haven, CT, is the lead author of
+                                the new paper.
+                            </div>
+                        </div>
+                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5"id="btn_readmore_test">
+                        Read More </a>
+                    
+                </div>
+            </div>
+            <!------------------------------------------------------>
+            <div class="col-lg-4">
+                <!--lastest news-->
+                <section class="articles">
+                    <div class="media">
+                        <h2>lastest news</h2>
+                      <div class="media-left">
+                         <img src="img/news/latest_1.webp" class="media-object" style="width:80px">
+                      </div>
+                      <div class="media-body">
+                         <h4 class="media-heading"><a href="#">A simple blog post</a></h4>
+                         <p>by Jane Smith / April 25, 2018</p>
+                          <a href="#" class="comment">16 Comments</a>
+                      </div>
+                    </div>
+                        <!--news 2-->
+                    <div class="media">
+                       <div class="media-left">
+                          <img src="img/news/latest_2.webp" class="media-object" style="width:80px">
+                       </div>
+                       <div class="media-body">
+                           <h4 class="media-heading"><a href="#">A new way to see things in medicine</a></h4>
+                           <p>by Jane Smith / April 25, 2018</p>
+                           <a href="#" class="comment">7 Comments</a>
+                       </div>
+                    </div>
+                        <!--news 3-->
+                    <div class="media">
+                       <div class="media-left">
+                          <img src="img/news/latest_3.webp" class="media-object" style="width:80px">
+                       </div>
+                       <div class="media-body">
+                          <h4 class="media-heading"><a href="#">Why is Pharma industry so big?</a></h4>
+                          <p>by Jane Smith / April 25, 2018</p>
+                          <a href="#" class="comment">12 Comments</a>
+                       </div>
+                     </div>
+                  </section>
+                <!------------------------------------------------>
+           
+                
+                	<!-- Appointment -->
+						<div class="info_form_container wow bounceInLeft">
+							<div class="info_form_title">Make an Appointment</div>
+							<form action="#" class="info_form">
+								<select  class="info_form_dep info_input info_select">
+									<option>Department</option>
+									<option>Department</option>
+									<option>Department</option>
+								</select>
+								<select   class="info_form_doc info_input info_select">
+									<option>Doctor</option>
+									<option>Doctor</option>
+									<option>Doctor</option>
+								</select>
+								<input type="text" class="info_input" placeholder="Name" required="required">
+								<input type="text" class="info_input" placeholder="Phone No">
+								<button class="info_form_button">make an appointment</button>
+							</form>
+						</div>
+            </div>
+        </div>
+      </div>
+ </section>
+   <!-- start section of news-->  
+    
+    
+<!-- contact page content -->  
+<section class="btnContent wow bounceInLeft" id="contact" style="display:none;">
+     <header>
+         <h1>Contact</h1>
+    </header>
+      
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <!--- contact form -->
+                <div class="contact_form">
+                    <div class="contact_title">
+                        <h2>Get in touch</h2>
+                    </div>
+                    <form class="form_container">
+                        <input class="form-control" type="text" placeholder="Your Name" required onchange="namevalidation1()">
+                        <div id="msgname" style="color: red"></div>
+                        <input class="form-control" type="text" placeholder="Your E-Mail" required onchange="">
+                        <div id="msgphone" style="color: red"></div>
+
+                        <input class="form-control" type="text" placeholder="Subject" required>
+                        <input class="form-control" type="text" placeholder="Message" id="form_message" required>
+                        <button class="btn btn-primary info_form_button_con" onclick="validation()"><i class="fa fa-send "></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!---appointment form-->
+            <div class="col-sm-4">
+                <div class="info_form_container">
+                    <div class="info_form_title">Make an Appointment</div>
+                    <form action="#" class="info_form">
+                        <select class="form-control info_form_dep info_input info_select">
+                             <option>Cardiology</option>   
+                             <option>Gastroenterology</option>   
+                             <option>Medical Lab</option>   
+                             <option>Dental Care</option>   
+                             <option>Surgery</option>   
+                             <option>Neurology</option> 
+                        </select>
+                        <select class=" form-controlinfo_form_doc info_input info_select">
+                            <option>Doctor1</option>
+                            <option>Doctor2</option>
+                            <option>Doctor3</option>
+                            <option>Doctor4</option>
+                            <option>Doctor5</option>
+                            <option>Doctor6</option>
+                            <option>Doctor7</option>
+                        </select>
+                        <input type="text" name="name" class="form-control info_input" placeholder="Name" required="required" onchange="namevalidation2()">
+                        <div id="name" style="color: red"></div>
+                        <input type="text" name="phone" class="form-control info_input" placeholder="Phone No" onchange="validationphone()">
+                        <div id="phone" style="color: red"></div>
+                        <input type="date" name="phone" class="form-control info_input" onchange="minDate()"><br>
+                        <div id="date" style="color: red"></div>
+                        <button class="btn btn-primary info_form_button">make an appointment</button>
+                    </form>
+                </div>
+            </div>
+                   <!-- info contact mails and phones-->
+                 <div class="mails_phones row">
+                    <div class="col-sm-4">
+                        <h2><i class="fa fa-phone"></i> Contact Info</h2>
+                        <strong><i class="fa fa-map-marker fa-1x"></i> Address:</strong> Minia, Taha Hussin ST<br>
+                        <strong><i class="fa fa-envelope fa-1x"></i> Email:</strong>mail@gmail.com<br>
+                        <strong><i class="fa fa-phone"></i> Phone:</strong>01011112222
+                    </div>
+                     
+                    <div class="col-sm-4"><br><br><br>
+                        <strong><i class="fa fa-map-marker fa-1x"></i> Address:</strong>Assiut, Yousry Ragheb ST<br>
+                        <strong><i class="fa fa-envelope fa-1x"></i> Email:</strong>mail@gmail.com<br>
+                        <strong><i class="fa fa-phone"></i> Phone: </strong>01022222111<br>
+                    </div>
+             <!--opening hours time table-->
+        <section class="time-table col-lg-4 col-sm-12">
+           <div class="footer_hours">
+              <h3 class="text-center"><i class="glyphicon glyphicon-hourglass"></i> Opening Hours</h3>
+                 <ul class="hours_list">
+                    <li>
+                       <span>Monday – Thursday</span>
+                       <span class="ml-auto">8.00 – 19.00</span>
+                    </li>
+                    <li>
+                       <span>Friday</span>
+                       <span class="ml-auto">8.00 - 18.30</span>
+                    </li>
+                    <li>
+                       <span>Saturday</span>
+                       <span class="ml-auto">9.30 – 17.00</span>
+                    </li>
+                    <li>
+                       <span>Sunday</span>
+                       <span class="ml-auto">9.30 – 15.00</span>
+                    </li>
+                 </ul>
+            </div>
+       </section> 
+    </div>
+            
+        </div>
+    </div>   
+ </section> 
+    
+
+    
+<footer>
+  <section class="footer-content">
+     <div class="row">
+       <div class="container">
+        <section class="social col-lg-3 col-sm-12">
+           <h3><i class="glyphicon glyphicon-link"></i> FOLLOW US ON SOCIAL MEDIA </h3>
+           <p>We have abelty to receved your requests all the day you can use our web pages. </p>
+             <div class="footer_social">
+                <ul>
+                   <li><a href="#"><i class="fa fa-pinterest fa-2x"></i></a></li>
+                   <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+                   <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+                   <li><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>
+                   <li><a href="#"><i class="fa fa-behance fa-2x"></i></a></li>
+                   <li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                </ul>
+             </div>
+        </section>
+          
+        <section class="contact col-lg-5 col-sm-12">
+             <h3><i class="fa fa-phone"></i> Quick Contact</h3>
+                 <form action="#" class="footer_contact_form" id="footer_contact_form">
+                      <div>
+                          <input type="text" class="form-control" placeholder="Name" required="required">
+                          <input type="email" class="form-control" placeholder="E-mail" required="required">
+                      </div>
+                           <textarea class="footer_contact_textarea form-control" placeholder="Message" required="required"></textarea>
+                        <button class="footer_contact_button btn btn-primary "><i class="fa fa-send"></i> Send message</button>
+                </form>
+        </section>
+          
+        <section class="time-table col-lg-4 col-sm-12">
+           <div class="footer_hours">
+              <h3 class="text-center"><i class="glyphicon glyphicon-hourglass"></i> Opening Hours</h3>
+                 <ul class="hours_list">
+                    <li>
+                       <span>Monday – Thursday</span>
+                       <span class="ml-auto">8.00 – 19.00</span>
+                    </li>
+                    <li>
+                       <span>Friday</span>
+                       <span class="ml-auto">8.00 - 18.30</span>
+                    </li>
+                    <li>
+                       <span>Saturday</span>
+                       <span class="ml-auto">9.30 – 17.00</span>
+                    </li>
+                    <li>
+                       <span>Sunday</span>
+                       <span class="ml-auto">9.30 – 15.00</span>
+                    </li>
+                 </ul>
+            </div>
+       </section> 
+   
+      </div>
+    </div>
+  </section>
+</footer>
+    
+    <!-- copyrights-->
+         <div class="copyright">Copyright ©2020 All rights reserved | This template is made with <i class="fa fa-heart-o fa-2x"></i> by <a href="#">HeathCare</a>
+        </div>   
+    </section>
+    
+    <script src="javascript/wow.min.js"></script>
+	<script>
+              new WOW().init();
+              </script>
+</body>
+</html>
