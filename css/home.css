@@ -35,7 +35,7 @@ line-height: 2.14;
   padding: 15px;
   display: inline-block;
   margin:7%;
-  font-size:25px;
+  font-size:60px;
 }
 
 #h3About{
@@ -313,6 +313,7 @@ line-height: 2.14;
   background-color: #008B8B;
   box-sizing: border-box;
   border-left: 5px solid black;
+  color: white;
 }
 .tab  div.active {
   background-color: #008B8B;
