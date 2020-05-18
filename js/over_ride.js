@@ -193,3 +193,4 @@ document.getElementById("phone").innerHTML="inValide date !";
     }
 }
 
+new WOW().init();
